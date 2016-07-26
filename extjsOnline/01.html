@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extjs base</title>
+    <link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css">
+    <script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../extjs/ext-all.js"></script>
+    <script type="text/javascript" src="../extjs/build/locale/ext-lang-zh_CN.js"></script>
+    <style>
+        .x-menu-list {
+            width: 178px;
+        }
+
+        .x-html-editor-wrap {
+            width: 250px;
+        }
+        .x-panel{
+           // margin: 40px;
+        }
+    </style>
+</head>
+<body>
+<div style="margin:40px;">
+    <h3>学习Ext，这是一些博客上的知识点与练习，在此记录一下，以备查阅。</h3>
+    什么是EXT？<br/>
+    –Ext是一个Ajax框架，可以用来开发带有华丽外观的富客户端应用，使得我们的b/s应用更加具有活力及生命力，提高用户体验。<br/>
+    –Ext是一个用javascript编写，与后台技术无关的前端ajax框架。因此，可以把Ext用在.Net、Java、Php等各种开发语言开发的应用中。<br/>
+    此时需要引入样式表与js,如html源代码上的script与style <br/>
+    <script type="text/javascript" language="javascript">
+        Ext.onReady(function () {
+            //出错时的提示
+            Ext.QuickTips.init();
+            //        Ext.BLANK_IMAGE_URL ='resources/images/default/s.gif';
+            //弹出提示框
+//                Ext.Msg.alert('提示','success');
+            //获取对象节点的三种方法
+            //1 . Ext.Element("hello");
+            //2.  Ext.getDom(e);
+            //3.  Ext.getDom(e.dom);
+//                var e = new Ext.Element("hello");
+//                Ext.Msg.alert("qq",Ext.getDom("hello"));
+//                Ext.Msg.alert("qq",Ext.getDom(e));
+//                Ext.Msg.alert("qq",Ext.getDom(e.dom));
+            //新建panel,其中renderTo : document.body;是指明控件要渲染的节点（当前窗体）的。
+            //renderto是用来指明控件要渲染的节点的。每一个控件都要指明该控件需要渲染到哪一个DOM节点。
+            var myPanel = new Ext.Panel({
+                id: 'mypanel',
+                title: 'old title',
+                renderTo: Ext.getBody(),
+                width: 300,
+                height: 200,
+                html: "<br> <span>http://blog.csdn.net/</span>"//添加html
+            });
+            Ext.getCmp("mypanel").setTitle("new title");//修改mypanel的标题
+            //tips:
+            //getCmp方法用来获得一个Ext组件，也就是一个已经在页面中初始化了的Component或其子类的对象，getCmp方法中只有一个参数，也就是组件的id。
+            //•getCmp方法其实是Ext.ComponentMgr.get方法的简写形式。
+//            --------------------------
+
+            var genres = new Ext.data.SimpleStore({
+                fields: ['id', 'genre'],
+                data: [['1', '北京'], ['2', '上海'], ['3', '广州'], ['4', '南京']]
+            });
+            //基本表单
+            //在下拉日期组件中，需要国际化，中文化，此时要引入js文件,
+            // locale/ext-lang-zh_CN.js
+//            单选按钮
+//           {xtype: 'radio',fieldLabel: '选择', width: 250, name: 'Filmed In',boxLabel: 'man'},
+//           { xtype: 'radio',fieldLabel: 'Filmed In',hiddenLabel: false,labelSeparator: '',width: 250,
+//            name: 'Filmed In',boxLabel: 'woman'}
+            //复选框
+            // {xtype: 'checkbox',fieldLabel: '请选择', width: 250,name: 'bad_movie',boxLabel: 'red'},
+            // {xtype: 'checkbox', fieldLabel: '请选择',hiddenLabel: false,labelSeparator: '',width: 250,
+            //name: 'bad_movie',boxLabel: 'oraganize'}
+//            下拉框
+//            对于combobox我们也要为它添加配置。
+//store配置项就是用来说明combo中采用的数据的。
+//与此同时我们还需要mode配置项，用来说明数据的来源是local source（本地）还是remote source（远程），
+//还有displayField数据项，用来说明把哪一列数据展现在combo的选项中。
+            //HTML编辑器
+//            { xtype: 'htmleditor', name: 'description', hideLabel: true, labelSeparator: '', height: 100, anchor: '100%' }
+            var movie_form = new Ext.FormPanel({
+                url: 'movie-form-submit.php',
+                renderTo: document.body,
+                frame: true,
+                title: 'xinxitianxie',
+                cls: 'style="margin: 40px"',
+                width: 600,
+                items: [{
+                    xtype: 'textfield',
+                    width: 250,
+                    fieldLabel: '文本框',
+                    name: 'title',
+                    allowBlank: false
+                }, {
+                    xtype: 'datefield',
+                    fieldLabel: '日历下拉框',
+                    name: 'released',
+                    width: 250,
+                    format: 'Y-m-d',//日期格式  YYYY-mm-dd, format: 'Y-m-d'
+                    disabledDays: [0, 6]//只能选择指定日期.这里是去除指定日期能不能选择，0代表星期日
+                }, {
+                    xtype: 'timefield',
+                    fieldLabel: '下拉时间框',
+                    width: 250,
+                    name: 'timeName'
+                }, {
+                    xtype: 'numberfield',
+                    fieldLabel: '数字框',
+                    width: 250,
+                    name: 'number'
+                }, {
+                    xtype: 'combo',
+                    fieldLabel: '下拉框，请选择',
+                    width: 250,
+                    name: 'genre',
+                    mode: 'local',
+                    store: genres,
+                    displayField: 'genre'
+                }, {
+                    xtype: 'textarea',
+                    fieldLabel: '多行文本框',
+                    width: 250,
+                    name: 'textarea'
+                }, {
+                    xtype: 'textfield',
+                    fieldLabel: '数字文本框',
+                    width: 250,
+                    name: 'textarea',
+                    vtype: 'email'//email, url, alpha, alphanum
+                }, {
+                    xtype: 'radio',
+                    fieldLabel: '选择',
+                    width: 250,
+                    name: 'Filmed In',
+                    boxLabel: 'man'
+                }, {
+                    xtype: 'radio',
+                    // fieldLabel: 'Filmed In',
+                    hiddenLabel: false,
+                    labelSeparator: '',
+                    width: 250,
+                    name: 'Filmed In',
+                    boxLabel: 'woman'
+                }, {
+                    xtype: 'checkbox',
+                    fieldLabel: '请选择',
+                    width: 250,
+                    name: 'bad_movie',
+                    boxLabel: 'red'
+                }, {
+                    xtype: 'checkbox',
+                    // fieldLabel: '请选择',
+                    hiddenLabel: false,
+                    labelSeparator: '',
+                    width: 250,
+                    name: 'bad_movie',
+                    boxLabel: 'oraganize'
+                }, {
+                    xtype: 'button',
+                    name: '提交'
+                }, {
+                    xtype: 'htmleditor',
+                    name: 'description',
+                    hideLabel: true,
+                    labelSeparator: '',
+                    height: 300,
+                    // anchor: '30%'//anchor:是html编辑器组件的width与浏览器窗口的比例
+                }]
+            })
+            //Ext的xtype
+//            vtype指的是Ext.form.TextField.。这里罗列出一些xtype：
+// .          textfield  文本框  常用
+//·          timefield 下拉时间框  不常用
+//·          numberfield 只能输入数字 数字验证常用
+//·          datefield  日历下拉框
+//·          combo 下拉框
+//·          textarea  多行文本框
+            //下面TextField应用到hell的div中,其中allowBlank是带校验功能的，allowBlank: false 不允许为空
+//            一种常用的校验是看用户是否输入了任何内容，建立一个allowBlank配置项并把它设置为false。
+//            内置校验——vtype
+//            vtype。它可以被用来校验和约束用户的输入，并且抛出错误的信息。它的基础是正则表达式，现在介绍几种vType
+//·         email；必须输入邮件
+//·         url；必须输入网址
+//·         alpha；必须输入文字不能是数字
+//·         alphanum;  文字+数字
+            //气球提示： Ext.QuickTips.init();这个语句应该放在Ext.onReady(function(){})；的第一行
+            var p = new Ext.form.TextField({
+                name: 'text',
+                fieldLabel: '文本框',
+                maxLength: 10,//最大长度
+                minLength: 5,//最小长度
+                applyTo: 'hell',
+                allowBlank: false,
+                regex: /^[\u4e00-\u9fa5]$/,//自定义验证
+                regexText: '只能输入汉字'//自定义验证提示
+            });
+            // Ext.onReady(function () {
+//            下拉菜单Toolbar
+//            说明：
+//            xtype: 'tbbutton',按钮
+//            xtype: 'tbbutton',菜单
+//            菜单的items（项目）和buttons的原理一样。他们可以有图标、样式表，以及句柄。菜单的所有itmes可以组合起来形成一些列可选择的按钮
+//            xtype: 'tbsplit',分割菜单
+//            就是按钮和菜单的结合。在使用它的时候只要在menu配置项目中添加按钮的属性就可以了。点击按钮左边部分可以触发按钮本身的事件，点击按钮右边的部分（有个倒三角）可以展开菜单。
+            new Ext.Toolbar({
+                renderTo: document.body,
+                items: [{
+                    xtype: 'tbbutton',
+                    text: 'Button'
+                }, {
+                    xtype: 'tbbutton',
+                    text: 'Menu Button',
+                    menu: [{
+                        text: 'Better'
+                    }, {
+                        text: 'Good'
+                    }, {
+                        text: 'Best'
+                    }]
+                }, {
+                    xtype: 'tbsplit',
+                    text: 'Split Button',
+                    menu: [{
+                        text: 'Item One'
+                    }, {
+                        text: 'Item Two'
+                    }, {
+                        text: 'Item Three'
+                    }]
+                }]
+            });
+            //折叠控件
+            new Ext.Panel({
+                renderTo: 'accordion',
+                title: '容器组件',
+                width: 500,
+                height: 200,
+                layout: 'accordion',
+                layoutConfig: {
+                    animate: true
+                },
+
+                items: [{title: '子元素1', html: '这是子元素1中的内容'},
+                    {title: '子元素2', html: '这回事子元素2中的内容'},
+                    {title: '子元素3', html: '这是子元素3中的内容'}]
+            });
+        });
+    </script>
+    <div id="hello">
+        <input id="hell" type="text" style="margin: 20px auto 10px 20px"/>
+    </div>
+    <div id="accordion"></div>
+</div>
+</body>
+</html>
