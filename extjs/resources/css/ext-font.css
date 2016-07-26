@@ -1,0 +1,404 @@
+/*
+ * Ext JS Library 2.0.2
+ * Copyright(c) 2006-2008, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+ 
+/* 字体 小 */ 
+.avicinfo-font-s .ext-el-mask-msg div{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .loading-indicator{font-size:11px;}
+.avicinfo-font-s .x-tab-strip span .x-tab-strip-text{font:bold 12px tahoma,arial,helvetica;}
+.avicinfo-font-s .x-form-field{font:normal 12px tahoma,arial,helvetica,sans-serif;margin-bottom:1px;}
+.avicinfo-font-s .x-form-grow-sizer{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-form-item{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-form-item .x-form-element{padding-bottom:3px;}
+.avicinfo-font-s .x-form-invalid-msg{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-small-editor .x-form-field{font:normal 12px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-s .ext-safari .x-small-editor .x-form-field{font:normal 12px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-s .x-fieldset legend{font:bold 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-btn{font:normal 12px tahoma,verdana,helvetica;}
+.avicinfo-font-s .x-btn button{font:normal 12px tahoma,verdana,helvetica;}
+.avicinfo-font-s .x-toolbar td,.avicinfo-font-s .x-toolbar span,.avicinfo-font-s .x-toolbar input,.avicinfo-font-s .x-toolbar div,.avicinfo-font-s .x-toolbar select,.avicinfo-font-s .x-toolbar label{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-grid3-hd-row td,.avicinfo-font-s .x-grid3-row td,.avicinfo-font-s .x-grid3-summary-row td{font:normal 12px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-s .x-grid3-topbar,.avicinfo-font-s .x-grid3-bottombar{font:normal 12px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-s .x-grid-group-hd div{font:bold 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-grid-empty{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-dd-drag-ghost{font:normal 12px arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-tree-node{font:normal 12px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-s .x-date-middle,.avicinfo-font-s .x-date-left,.avicinfo-font-s .x-date-right{font:bold 12px "sans serif",tahoma,verdana,helvetica;}
+.avicinfo-font-s .x-date-inner th{font:normal 12px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-s .x-date-inner a{font:normal 12px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-s .x-date-mmenu .x-menu-item{font-size:12px;}
+.avicinfo-font-s .x-date-mp td{font:normal 12px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-s .x-date-mp-btns button{font:normal 12px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-s .x-tip .x-tip-mc{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-tip .x-tip-header-text{font:bold 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-tip .x-tip-body{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-menu-list-item{font:normal 12px tahoma,arial,sans-serif;}
+.avicinfo-font-s .x-box-mc{font-size:12px;font-family:"Myriad Pro","Myriad Web","Tahoma","Helvetica","Arial",sans-serif;}
+.avicinfo-font-s .x-box-mc h3{font-size:12px;}
+.avicinfo-font-s #x-debug-browser .x-tree .x-tree-node a span{font-size:12px;font-family:"monotype","courier new",sans-serif;}
+.avicinfo-font-s .x-combo-list-hd{font:bold 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-combo-list-item{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-combo-list-small .x-combo-list-item{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-panel-header{font:bold 12px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-s .x-panel-tl .x-panel-header{font:bold 12px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-s .x-panel-mc{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-window-tl .x-window-header{font:bold 12px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-s .x-window-mc{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-progress-text{font-size:12px;}
+.avicinfo-font-s .x-window-dlg .ext-mb-text,.avicinfo-font-s .x-window-dlg .x-window-header-text{font-size:12px;}
+.avicinfo-font-s .x-window-dlg .ext-mb-textarea{font:normal 12px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-s .x-form-field-wrap .x-form-trigger{height:17px;}
+.avicinfo-font-s .x-tree-hd-text{font-size:12px;}
+.avicinfo-font-s .x-form-element{}
+/*  字体 中      */
+.avicinfo-font-n .ext-el-mask-msg div{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .loading-indicator{font-size:14px;}
+.avicinfo-font-n .x-tab-strip span .x-tab-strip-text{font:bold 14px tahoma,arial,helvetica;}
+.avicinfo-font-n  .x-form-field{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-form-grow-sizer{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-form-item{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-form-invalid-msg{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-small-editor .x-form-field{font:normal 14px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-n .ext-safari .x-small-editor .x-form-field{font:normal 14px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-n .x-fieldset legend{font:bold 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-btn{font:normal 14px tahoma,verdana,helvetica;}
+.avicinfo-font-n .x-btn button{font:normal 14px tahoma,verdana,helvetica;line-height:14px !important;line-height:16px;}
+.avicinfo-font-n .x-toolbar td,.avicinfo-font-n .x-toolbar span,.avicinfo-font-n .x-toolbar input,.avicinfo-font-n .x-toolbar div,.avicinfo-font-n .x-toolbar select,.avicinfo-font-n .x-toolbar label{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-grid3-hd-row td,.avicinfo-font-n .x-grid3-row td,.avicinfo-font-n .x-grid3-summary-row td{font:normal 14px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-n .x-grid3-topbar,.avicinfo-font-n .x-grid3-bottombar{font:normal 14px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-n .x-grid-group-hd div{font:bold 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-grid-empty{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-dd-drag-ghost{font:normal 14px arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-tree-node{font:normal 14px arial,tahoma,helvetica,sans-serif;margin-top:2px;margin-bottom:1px;}
+.avicinfo-font-n .x-date-middle,.avicinfo-font-n .x-date-left,.avicinfo-font-n .x-date-right{font:bold 14px "sans serif",tahoma,verdana,helvetica;}
+.avicinfo-font-n .x-date-inner th{font:normal 14px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-n .x-date-inner a{font:normal 14px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-n .x-date-mmenu .x-menu-item{font-size:14px;}
+.avicinfo-font-n .x-date-mp td{font:normal 14px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-n .x-date-mp-btns button{font:normal 14px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-n .x-tip .x-tip-mc{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-tip .x-tip-header-text{font:bold 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-tip .x-tip-body{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-menu-list-item{font:normal 14px tahoma,arial,sans-serif;}
+.avicinfo-font-n .x-box-mc{font-size:14px;font-family:"Myriad Pro","Myriad Web","Tahoma","Helvetica","Arial",sans-serif;}
+.avicinfo-font-n .x-box-mc h3{font-size:14px;}
+.avicinfo-font-n #x-debug-browser .x-tree .x-tree-node a span{font-size:14px;font-family:"monotype","courier new",sans-serif;}
+.avicinfo-font-n .x-combo-list-hd{font:bold 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-combo-list-item{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-combo-list-small .x-combo-list-item{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-panel-header{font:bold 14px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-n .x-panel-tl .x-panel-header{font:bold 14px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-n .x-panel-mc{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-window-tl .x-window-header{font:bold 14px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-n .x-window-mc{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-progress-text{font-size:14px;}
+.avicinfo-font-n .x-window-dlg .ext-mb-text,.avicinfo-font-n .x-window-dlg .x-window-header-text{font-size:14px;}
+.avicinfo-font-n .x-window-dlg .ext-mb-textarea{font:normal 14px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-n .x-form-field-wrap .x-form-trigger {height:19px;}
+.avicinfo-font-n .x-tree-hd-text {font-size:14px;}
+/*  字体   大    */
+.avicinfo-font-l .ext-el-mask-msg div{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .loading-indicator{font-size:16px;}
+.avicinfo-font-l .x-tab-strip span .x-tab-strip-text{font:bold 15px tahoma,arial,helvetica;}
+.avicinfo-font-l  .x-form-field{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-form-grow-sizer{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-form-item{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-form-invalid-msg{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-small-editor .x-form-field{font:normal 16px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-l .ext-safari .x-small-editor .x-form-field{font:normal 16px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-l .x-fieldset legend{font:bold 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-btn{font:normal 16px tahoma,verdana,helvetica;}
+.avicinfo-font-l .x-btn button{font:normal 16px tahoma,verdana,helvetica;line-height:16px;}
+.avicinfo-font-l .x-btn-text {}
+.avicinfo-font-l .x-toolbar td,.avicinfo-font-l .x-toolbar span,.avicinfo-font-l .x-toolbar input,.avicinfo-font-l .x-toolbar div,.avicinfo-font-l .x-toolbar select,.avicinfo-font-l .x-toolbar label{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-grid3-hd-row td,.avicinfo-font-l .x-grid3-row td,.avicinfo-font-l .x-grid3-summary-row td{font:normal 16px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-l .x-grid3-topbar,.avicinfo-font-l .x-grid3-bottombar{font:normal 16px arial,tahoma,helvetica,sans-serif;}
+.avicinfo-font-l .x-grid-group-hd div{font:bold 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-grid-empty{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-dd-drag-ghost{font:normal 16px arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-tree-node{font:normal 16px arial,tahoma,helvetica,sans-serif;margin-top:2px;margin-bottom:1px;}
+.avicinfo-font-l .x-date-middle,.avicinfo-font-l .x-date-left,.avicinfo-font-l .x-date-right{font:bold 16px "sans serif",tahoma,verdana,helvetica;}
+.avicinfo-font-l .x-date-inner th{font:normal 16px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-l .x-date-inner a{font:normal 16px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-l .x-date-mmenu .x-menu-item{font-size:16px;}
+.avicinfo-font-l .x-date-mp td{font:normal 16px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-l .x-date-mp-btns button{font:normal 16px arial,helvetica,tahoma,sans-serif;}
+.avicinfo-font-l .x-tip .x-tip-mc{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-tip .x-tip-header-text{font:bold 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-tip .x-tip-body{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-menu-list-item{font:normal 16px tahoma,arial,sans-serif;}
+.avicinfo-font-l .x-box-mc{font-size:16px;font-family:"Myriad Pro","Myriad Web","Tahoma","Helvetica","Arial",sans-serif;}
+.avicinfo-font-l .x-box-mc h3{font-size:16px;}
+.avicinfo-font-l #x-debug-browser .x-tree .x-tree-node a span{font-size:16px;font-family:"monotype","courier new",sans-serif;}
+.avicinfo-font-l .x-combo-list-hd{font:bold 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-combo-list-item{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-combo-list-small .x-combo-list-item{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-panel-header{font:bold 16px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-l .x-panel-tl .x-panel-header{font:bold 16px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-l .x-panel-mc{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-window-tl .x-window-header{font:bold 16px tahoma,arial,verdana,sans-serif;}
+.avicinfo-font-l .x-window-mc{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-progress-text{font-size:16px;}
+.avicinfo-font-l .x-window-dlg .ext-mb-text,.avicinfo-font-l .x-window-dlg .x-window-header-text{font-size:16px;}
+.avicinfo-font-l .x-window-dlg .ext-mb-textarea{font:normal 16px tahoma,arial,helvetica,sans-serif;}
+.avicinfo-font-l .x-form-field-wrap .x-form-trigger {height:21px;}
+.avicinfo-font-l .x-tree-hd-text {font-size:16px;}
+
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+/*  AvicInfo CSS  */
+
+/* 字体 小  */
+.avicinfo-font-s table {font-size:12px;}
+.avicinfo-font-s select {font-size:12px;}
+.avicinfo-font-s input {font-size:12px;}
+.avicinfo-font-s .pre_b {letter-spacing:6px;}
+.avicinfo-font-s .pre_b a {margin-left:14px;}
+.avicinfo-font-s .next_b {letter-spacing:6px;}
+.avicinfo-font-s .next_b a {margin-right:3px;}
+.avicinfo-font-s .table_list {font-size: 12px;}
+.avicinfo-font-s .td_table_field {font-size: 12px;}
+.avicinfo-font-s .table_fistlist {font-size: 12px;}
+.avicinfo-font-s .content_a a {font-size: 12px;height:16px;line-height:16px !important;line-height:18px;}
+.avicinfo-font-s .content_l_a a {font-size: 12px;height:16px;line-height:16px;_padding-top:1px;}
+.avicinfo-font-s .tr_title {font-size: 12px;}
+.avicinfo-font-s .tr_title2 {font-weight: bold;font-size:bold 12px;}
+.avicinfo-font-s .td_title {font-weight: bold;font-size: 12px;}
+.avicinfo-font-s .panel_bg {font-weight: bold;}
+.avicinfo-font-s .navigator a {font-weight: bold;}
+.avicinfo-font-s .navigator a:hover {font-weight: bold;}
+.avicinfo-font-s .table_bg {font-weight: bold;}
+.avicinfo-font-s .panel_grade {font-weight: bold;}
+.avicinfo-font-s .td_title2 {font-weight: bold;font-size: 12px;}
+.avicinfo-font-s .title_text {font-weight: bold;font-size: 14px;}
+.avicinfo-font-s .title_text_left {font-weight: bold;font-size: 14px;}
+.avicinfo-font-s .common_text_left {font-weight: lighter;font-size: 12px;}
+.avicinfo-font-s .red_text_left {font-weight: lighter;font-size: 12px;}
+.avicinfo-font-s .tab_noneinfo_odd {font-size: xx-small;}
+.avicinfo-font-s .tab_page_lay1 {font-size: 13px;}
+.avicinfo-font-s .tab_page_lay2 {font-size: 13px;}
+.avicinfo-font-s .tr_list_even {font-size: 13px;}
+.avicinfo-font-s .tr_list_odd {font-size: 13px;}
+.avicinfo-font-s .tr_first_title {font-weight: bold;font-size: 12px;}
+.avicinfo-font-s .alink_list:link {font-size: 13px;}
+.avicinfo-font-s .alink_list:visited {font-size: 13px;}
+.avicinfo-font-s .alink_list:hover {font-size: 13px;}
+.avicinfo-font-s .alink_title:link {font-size: 13px;}
+.avicinfo-font-s .alink_title:visited {font-size: 13px;}
+.avicinfo-font-s .alink_title:hover {font-size: 13px;}
+.avicinfo-font-s .td_ciis_content {font-size: 13px;}
+.avicinfo-font-s .td_ciis_person {font-size: 13px;}
+.avicinfo-font-s .reply_title_text {font-size: 14px;font-weight: bold;}
+.avicinfo-font-s .info_detail_table {font-size: 13px;}
+.avicinfo-font-s .td_ciis_form {font-size: 13px;}
+.avicinfo-font-s .info_reply_table {font-size: 13px;}
+.avicinfo-font-s .color_text {font-size: 12px;font-weight: bold;}
+.avicinfo-font-s .web_table {font-weight: bold;}
+.avicinfo-font-s .footer1 {font-weight: bold;}
+.avicinfo-font-s .dropdiv {font-size: 13px;}
+.avicinfo-font-s .dropdiv_hover {font-size: 13px;}
+.avicinfo-font-s .title_text {font-size: 20px;font-weight: bold;}
+.avicinfo-font-s .t_c1_p {font-size: 13px;}
+.avicinfo-font-s .inner_div1 {font-size: 14px;font-weight: bold;}
+.avicinfo-font-s .inner_div2 {font-size: 14px;font-weight: bold;}
+.avicinfo-font-s .title {font-weight: bold;font-size: 22px;}
+.avicinfo-font-s .childreport_input {font-family: '宋体';font-size: 13px;}
+.avicinfo-font-s .tab_tit_bg {font-weight: normal;}
+.avicinfo-font-s .n_tab_tit_bg {font-weight: bold;}
+.avicinfo-font-s .n_tab_tit_bg_c {font-weight: bold;}
+.avicinfo-font-s .tr_gray {text-indent: 10px;}
+.avicinfo-font-s .tab_text {font-size: 12px;}
+.avicinfo-font-s .error_image {font-size:14px;font-weight:bold;}
+.avicinfo-font-s .button {font-size:12px;}
+.avicinfo-font-s .button_s {font-size:12px;}
+.avicinfo-font-s .panel_grade input {height:18px;font-size:12px;}
+.avicinfo-font-s .panel_grade select {height:18px;font-size:12px;}
+.avicinfo-font-s .n_tab_bg input {height:20px;font-size:12px;}
+.avicinfo-font-s .n_tab_bg select {height:20px;font-size:12px;}
+.avicinfo-font-s .n_b_set {font-size:12px;}
+.avicinfo-font-s .global_search {font-size:12px;height:22px;}
+.avicinfo-font-s .part_search {font-size:12px;height:22px;padding-top:2px;}
+.avicinfo-font-s .table_blue {font-size:12px;}
+.avicinfo-font-s .tr_gray td {font-size:12px;}
+.avicinfo-font-s .table_blue .tr_gray {font-size:12px;}
+.avicinfo-font-s .table_blue .tr_gray input {font-size:12px;height:18px;}
+.avicinfo-font-s .table_blue .tr_gray select {font-size:12px;height:18px;}
+.avicinfo-font-s .alert {font-size:12px;}
+
+
+/* 字体 中  */
+.avicinfo-font-n table {font-size:14px;}
+.avicinfo-font-n select {font-size:14px;}
+.avicinfo-font-n input {font-size:14px;}
+.avicinfo-font-n .pre_b {letter-spacing:3px;}
+.avicinfo-font-n .pre_b a {margin-left:12px;}
+.avicinfo-font-n .next_b {letter-spacing:3px;}
+.avicinfo-font-n .pre_b a {margin-left:12px;}
+.avicinfo-font-n .table_list {font-size: 14px;}
+.avicinfo-font-n .td_table_field {font-size: 14px;}
+.avicinfo-font-n .table_fistlist {font-size: 14px;}
+.avicinfo-font-n .content_a a {font-size: 14px;background-position:100% 100%;height:19px;line-height:18px !important;line-height:19px;}
+.avicinfo-font-n .content_l_a a {width:120px;height:20px;line-height:20px;_padding-top:3px;background-position:100% 100%;}
+.avicinfo-font-n .tr_title {font-size: 14px;}
+.avicinfo-font-n .tr_title2 {font-weight: bold;font-size:bold 14px;}
+.avicinfo-font-n .td_title {font-weight: bold;font-size: 14px;}
+.avicinfo-font-n .panel_bg {font-weight: bold;}
+.avicinfo-font-n .navigator a {font-weight: bold;}
+.avicinfo-font-n .navigator a:hover {font-weight: bold;}
+.avicinfo-font-n .table_bg {font-weight: bold;}
+.avicinfo-font-n .panel_grade {font-weight: bold;}
+.avicinfo-font-n .td_title2 {font-weight: bold;font-size: 14px;}
+.avicinfo-font-n .title_text {font-weight: bold;font-size: 16px;}
+.avicinfo-font-n .title_text_left {font-weight: bold;font-size: 16px;}
+.avicinfo-font-n .common_text_left {font-weight: lighter;font-size: 14px;}
+.avicinfo-font-n .red_text_left {font-weight: lighter;font-size: 14px;}
+.avicinfo-font-n .tab_noneinfo_odd {font-size: xx-small;}
+.avicinfo-font-n .tab_page_lay1 {font-size: 15px;}
+.avicinfo-font-n .tab_page_lay2 {font-size: 15px;}
+.avicinfo-font-n .tr_list_even {font-size: 15px;}
+.avicinfo-font-n .tr_list_odd {font-size: 15px;}
+.avicinfo-font-n .tr_first_title {font-weight: bold;font-size: 14px;}
+.avicinfo-font-n .alink_list:link {font-size: 15px;}
+.avicinfo-font-n .alink_list:visited {font-size: 15px;}
+.avicinfo-font-n .alink_list:hover {font-size: 15px;}
+.avicinfo-font-n .alink_title:link {font-size: 15px;}
+.avicinfo-font-n .alink_title:visited {font-size: 15px;}
+.avicinfo-font-n .alink_title:hover {font-size: 15px;}
+.avicinfo-font-n .td_ciis_content {font-size: 15px;}
+.avicinfo-font-n .td_ciis_person {font-size: 15px;}
+.avicinfo-font-n .reply_title_text {font-size: 16px;font-weight: bold;}
+.avicinfo-font-n .info_detail_table {font-size: 15px;}
+.avicinfo-font-n .td_ciis_form {font-size: 15px;}
+.avicinfo-font-n .info_reply_table {font-size: 15px;}
+.avicinfo-font-n .color_text {font-size: 14px;font-weight: bold;}
+.avicinfo-font-n .web_table {font-weight: bold;}
+.avicinfo-font-n .footer1 {font-weight: bold;}
+.avicinfo-font-n .dropdiv {font-size: 15px;}
+.avicinfo-font-n .dropdiv_hover {font-size: 15px;}
+.avicinfo-font-n .title_text {font-size: 20px;font-weight: bold;}
+.avicinfo-font-n .t_c1_p {font-size: 15px;}
+.avicinfo-font-n .inner_div1 {font-size: 16px;font-weight: bold;}
+.avicinfo-font-n .inner_div2 {font-size: 16px;font-weight: bold;}
+.avicinfo-font-n .title {font-weight: bold;font-size: 22px;}
+.avicinfo-font-n .childreport_input {font-family: '宋体';font-size: 15px;}
+.avicinfo-font-n .tab_tit_bg {font-weight: normal;}
+.avicinfo-font-n .n_tab_tit_bg {font-weight: bold;}
+.avicinfo-font-n .n_tab_tit_bg_c {font-weight: bold;}
+.avicinfo-font-n .tr_gray {text-indent: 10px;}
+.avicinfo-font-n .tab_text {font-size: 14px;}
+.avicinfo-font-n .error_image {font-size:16px;font-weight:bold;}
+.avicinfo-font-n .button {font-size:14px;}
+.avicinfo-font-n .button_s {font-size:14px;}
+.avicinfo-font-n .panel_grade input {height:20px;font-size:14px;}
+.avicinfo-font-n .panel_grade select {height:20px;font-size:14px;}
+.avicinfo-font-n .n_tab_bg input {height:20px;font-size:14px;}
+.avicinfo-font-n .n_tab_bg select {height:20px;font-size:14px;}
+.avicinfo-font-n .n_b_set {font-size:14px;}
+.avicinfo-font-n .global_search {font-size:14px;}
+.avicinfo-font-n .part_search {font-size:14px;}
+.avicinfo-font-n .table_blue {font-size:14px;}
+.avicinfo-font-n .tr_gray td {font-size:14px;}
+.avicinfo-font-n .table_blue .tr_gray {font-size:14px;}
+.avicinfo-font-n .table_blue .tr_gray input {font-size:14px;height:20px;}
+.avicinfo-font-n .table_blue .tr_gray select {font-size:14px;height:20px;}
+.avicinfo-font-n .alert {font-size:14px;}
+
+/* 字体 大 */
+.avicinfo-font-l table {font-size:16px;}
+.avicinfo-font-l select {font-size:16px;}
+.avicinfo-font-l input {font-size:16px;}
+.avicinfo-font-l .pre_b {letter-spacing:1px;}
+.avicinfo-font-l .pre_b a {margin-left:10px;}
+.avicinfo-font-l .next_b {letter-spacing:1px;}
+.avicinfo-font-l .next_b a {margin-left:0px;}
+.avicinfo-font-l .table_list {font-size: 16px;}
+.avicinfo-font-l .td_table_field {font-size: 16px;}
+.avicinfo-font-l .table_fistlist {font-size: 16px;}
+.avicinfo-font-l .content_a a {font-size: 16px;background-position:100% 100%;height:19px;line-height:21px !important;line-height:19px;}
+.avicinfo-font-l .content_l_a a {width:120px;height:20px;line-height:22px !important;line-height:19px;background-position:100% 100%;}
+.avicinfo-font-l .tr_title {font-size: 16px;}
+.avicinfo-font-l .tr_title2 {font-weight: bold;font-size:bold 16px;}
+.avicinfo-font-l .td_title {font-weight: bold;font-size: 16px;}
+.avicinfo-font-l .panel_bg {font-weight: bold;}
+.avicinfo-font-l .navigator a {font-weight: bold;}
+.avicinfo-font-l .navigator a:hover {font-weight: bold;}
+.avicinfo-font-l .table_bg {font-weight: bold;}
+.avicinfo-font-l .panel_grade {font-weight: bold;}
+.avicinfo-font-l .td_title2 {font-weight: bold;font-size: 16px;}
+.avicinfo-font-l .title_text {font-weight: bold;font-size: 14px;}
+.avicinfo-font-l .title_text_left {font-weight: bold;font-size: 14px;}
+.avicinfo-font-l .common_text_left {font-weight: lighter;font-size: 16px;}
+.avicinfo-font-l .red_text_left {font-weight: lighter;font-size: 16px;}
+.avicinfo-font-l .tab_noneinfo_odd {font-size: xx-small;}
+.avicinfo-font-l .tab_page_lay1 {font-size: 17px;}
+.avicinfo-font-l .tab_page_lay2 {font-size: 17px;}
+.avicinfo-font-l .tr_list_even {font-size: 17px;}
+.avicinfo-font-l .tr_list_odd {font-size: 17px;}
+.avicinfo-font-l .tr_first_title {font-weight: bold;font-size: 16px;}
+.avicinfo-font-l .alink_list:link {font-size: 17px;}
+.avicinfo-font-l .alink_list:visited {font-size: 17px;}
+.avicinfo-font-l .alink_list:hover {font-size: 17px;}
+.avicinfo-font-l .alink_title:link {font-size: 17px;}
+.avicinfo-font-l .alink_title:visited {font-size: 17px;}
+.avicinfo-font-l .alink_title:hover {font-size: 17px;}
+.avicinfo-font-l .td_ciis_content {font-size: 17px;}
+.avicinfo-font-l .td_ciis_person {font-size: 17px;}
+.avicinfo-font-l .reply_title_text {font-size: 14px;font-weight: bold;}
+.avicinfo-font-l .info_detail_table {font-size: 17px;}
+.avicinfo-font-l .td_ciis_form {font-size: 17px;}
+.avicinfo-font-l .info_reply_table {font-size: 17px;}
+.avicinfo-font-l .color_text {font-size: 16px;font-weight: bold;}
+.avicinfo-font-l .web_table {font-weight: bold;}
+.avicinfo-font-l .footer1 {font-weight: bold;}
+.avicinfo-font-l .dropdiv {font-size: 17px;}
+.avicinfo-font-l .dropdiv_hover {font-size: 17px;}
+.avicinfo-font-l .title_text {font-size: 20px;font-weight: bold;}
+.avicinfo-font-l .t_c1_p {font-size: 17px;}
+.avicinfo-font-l .inner_div1 {font-size: 14px;font-weight: bold;}
+.avicinfo-font-l .inner_div2 {font-size: 14px;font-weight: bold;}
+.avicinfo-font-l .title {font-weight: bold;font-size: 22px;}
+.avicinfo-font-l .childreport_input {font-family: '宋体';font-size: 17px;}
+.avicinfo-font-l .tab_tit_bg {font-weight: normal;}
+.avicinfo-font-l .n_tab_tit_bg {font-weight: bold;}
+.avicinfo-font-l .n_tab_tit_bg_c {font-weight: bold;}
+.avicinfo-font-l .tr_gray {text-indent: 10px;}
+.avicinfo-font-l .tab_text {font-size: 16px;}
+.avicinfo-font-l .error_image {font-size:14px;font-weight:bold;}
+.avicinfo-font-l .button {font-size:16px;}
+.avicinfo-font-l .button_s {font-size:16px;}
+.avicinfo-font-l .panel_grade input {height:22px;font-size:16px;}
+.avicinfo-font-l .panel_grade select {height:22px;font-size:16px;}
+.avicinfo-font-l .n_tab_bg input {height:22px;font-size:16px;}
+.avicinfo-font-l .n_tab_bg select {height:22px;font-size:16px;}
+.avicinfo-font-l .n_b_set {font-size:16px;}
+.avicinfo-font-l .global_search {font-size:16px;}
+.avicinfo-font-l .part_search {font-size:16px;}
+.avicinfo-font-l .table_blue {font-size:16px;}
+.avicinfo-font-l .tr_gray {font-size:16px;}
+.avicinfo-font-l .tr_gray td {font-size:16px;}
+.avicinfo-font-l .tr_gray input {font-size:16px;height:22px;}
+.avicinfo-font-l .tr_gray select {font-size:16px;height:22px;}
+.avicinfo-font-l .alert {font-size:16px;}
+
+
+
+
+

@@ -1,0 +1,528 @@
+/*
+ * Ext JS Library 2.0 RC 1
+ * Copyright(c) 2006-2007, Ext JS, LLC.
+ * licensing@extjs.com
+ * Download by http://www.codefans.net 
+ * http://extjs.com/license
+ */
+.x-panel {
+	border-style: solid ! important;
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-header {
+	color: #333 ! important;
+	border-color:#91CEB9 ! important;
+	background-image: url(../images/qing/panel/white-top-bottom.gif) ! important;
+}
+
+.x-panel-body {
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-bbar .x-toolbar {
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-tbar .x-toolbar {
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-tbar-noheader .x-toolbar,.x-panel-mc .x-panel-tbar .x-toolbar {
+	border-color: #91ceb9 ! important;
+}
+
+.x-btn-text-icon .x-btn-center .x-btn-text {
+	background-position: 0px 1px ! important;
+	padding: 0px 0px 2px 18px ! important;
+}
+
+.x-panel-body-noheader,.x-panel-mc .x-panel-body {
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-tl .x-panel-header {
+	color: #333  ! important;
+}
+
+.x-panel-tc {
+	background-image: url(../images/qing/panel/top-bottom.gif) ! important;
+}
+
+.x-panel-tl {
+	background-image: url(../images/qing/panel/corners-sprite.gif) ! important;
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-tr {
+	background: url("../images/qing/panel/corners-sprite.gif") no-repeat scroll right 0 transparent ! important;
+}
+
+.x-panel-bc {
+	background-image: url(../images/qing/panel/top-bottom.gif) ! important;
+}
+
+.x-panel-bl {
+	background-image: url(../images/qing/panel/corners-sprite.gif) ! important;
+}
+
+.x-panel-br {
+	background-image: url(../images/qing/panel/corners-sprite.gif) ! important;
+}
+ 
+.x-panel-mc {
+	background: #FFFFFF ! important;
+	padding-top:4px  ! important;
+}
+
+.x-panel-mc .x-panel-body {
+	background: transparent ! important;
+	border: 0 none ! important;
+}
+
+.x-panel-ml {
+	text-align:center ! important;
+	padding-left:1px  ! important;
+	background-image: url(../images/qing/panel/left-right.gif) ! important;
+}
+
+.x-panel-mr {
+	padding-right:1px  ! important;
+	background-image: url(../images/qing/panel/left-right.gif) ! important;
+}
+
+/* Tools */
+.x-tool {
+	background-image: url(../images/qing/panel/tool-sprites.gif) ! important;
+}
+.x-tool-refresh {
+	background-position: 0 -225px ! important;
+}
+.x-tool-help {
+	background-position: 0 -300px ! important;
+}
+.x-tool-close {
+    background-position: 0 0 ! important;
+}
+.x-tool-close-over {
+    background-position: -15 0 ! important;
+}
+.x-tool-gear {
+	background-position: 0 -90px ! important;
+}
+.x-tool-gear-over {
+	background-position: -15 -90px ! important;
+}
+.x-tool-toggle {
+	background-position: 0 -60px ! important;
+}
+.x-tool-toggle-over {
+	background-position: -15 -60px ! important;
+}
+.x-panel-collapsed .x-tool-toggle {
+	background-position: 0 -75px ! important;
+}
+.x-panel-collapsed .x-tool-toggle-over {
+	background-position: -15 -75px ! important;
+}
+
+.x-tool-collapse-west  {
+	background-position: 0 -180px ! important;
+}
+
+/* Ghosting */
+.x-panel-ghost {
+	background: #b2dece ! important;
+}
+
+.x-panel-ghost ul {
+	border-color: #55ae8f ! important;
+}
+
+.x-grid-panel .x-panel-mc .x-panel-body {
+	border: 1px solid #91ceb9 ! important;
+}
+
+/* Buttons */
+.x-btn-left {
+	background-image: url(../images/qing/button/btn-sprite.gif) ! important;
+}
+
+.x-btn-right {
+	background-image: url(../images/qing/button/btn-sprite.gif) ! important;
+}
+
+.x-btn-center {
+	background-image: url(../images/qing/button/btn-sprite.gif) ! important;
+}
+
+/* Layout classes */
+.x-border-layout-ct {
+	background: #d5eee5 ;
+}
+
+.x-accordion-hd {
+	background-image: url(../images/qing/panel/light-hd.gif) ! important;
+}
+
+.x-layout-collapsed {
+	background-color: #d0ebe2 ! important;
+	border-color: #b2dece ! important;
+}
+
+.x-layout-collapsed-over {
+	background-color: #f0f9f6 ! important;
+}
+
+.x-layout-split {
+	background-color:#D7F2ED ! important;
+}
+
+
+/* qtips */
+.x-tip .x-tip-top {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-top-left {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-top-right {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-ft {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-ft-left {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-ft-right {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-bd-left {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+.x-tip .x-tip-bd-right {
+	background-image: url(../images/qing/qtip/tip-sprite.gif) ! important;
+}
+
+/* Toolbars */
+.x-toolbar {
+	border-color: #91ceb9 ! important;
+	background: #ddf1ea url(../images/qing/toolbar/bg.gif) repeat-x top
+		left ! important;
+}
+
+.x-toolbar button {
+	color: #444 ! important;
+}
+
+.x-toolbar .x-btn-menu-arrow-wrap .x-btn-center button {
+	background-image: url(../images/qing/toolbar/btn-arrow.gif) ! important;
+}
+
+.x-toolbar .x-btn-text-icon .x-btn-menu-arrow-wrap .x-btn-center button
+	{
+	background-image: url(../images/qing/toolbar/btn-arrow.gif) ! important;
+}
+
+.x-toolbar .x-btn-over .x-btn-left {
+	background-image: url(../images/qing/toolbar/tb-btn-sprite.gif) ! important;
+}
+
+.x-toolbar .x-btn-over .x-btn-right {
+	background-image: url(../images/qing/toolbar/tb-btn-sprite.gif) ! important;
+}
+
+.x-toolbar .x-btn-over .x-btn-center {
+	background-image: url(../images/qing/toolbar/tb-btn-sprite.gif) ! important;
+}
+
+.x-toolbar .x-btn-over button {
+	color: #111 ! important;
+}
+
+.x-toolbar .x-btn-click .x-btn-left,.x-toolbar .x-btn-pressed .x-btn-left,.x-toolbar .x-btn-menu-active .x-btn-left
+	{
+	background-image: url(../images/qing/toolbar/tb-btn-sprite.gif) ! important;
+}
+
+.x-toolbar .x-btn-click .x-btn-right,.x-toolbar .x-btn-pressed .x-btn-right,.x-toolbar .x-btn-menu-active .x-btn-right
+	{
+	background-image: url(../images/qing/toolbar/tb-btn-sprite.gif) ! important;
+}
+
+.x-toolbar .x-btn-click .x-btn-center,.x-toolbar .x-btn-pressed .x-btn-center,.x-toolbar .x-btn-menu-active .x-btn-center
+	{
+	background-image: url(../images/qing/toolbar/tb-btn-sprite.gif) ! important;
+}
+
+.x-toolbar .ytb-sep {
+	background-image: url(../images/default/grid/grid-split.gif) ! important;
+}
+
+/* Tabs */
+.x-tab-panel-header,.x-tab-panel-footer {
+	background: #c6e7db ! important;
+	border-color: #91ceb9 ! important;
+}
+
+.x-tab-panel-header {
+	border-color: #91ceb9 ! important;
+}
+
+.x-tab-panel-footer {
+	border-color: #91ceb9 ! important;
+}
+
+ul.x-tab-strip-top {
+	background:  url(../images/qing/tabs/tab-strip-bg.gif) repeat-x
+		left top #A6D8C7 ! important;
+	border-color: #53AD8E ! important;
+	padding-top: 2px ! important;
+}
+
+ul.x-tab-strip-bottom {
+	background-image: url(../images/qing/tabs/tab-strip-btm-bg.gif) ! important;
+	border-color: #91ceb9 ! important;
+}
+
+.x-tab-strip span.x-tab-strip-text {
+	color: #333 ! important;
+}
+
+.x-tab-strip-over span.x-tab-strip-text {
+	color: #111 ! important;
+}
+
+.x-tab-strip-active span.x-tab-strip-text {
+	color: #333 ! important;
+}
+
+.x-tab-strip-disabled .x-tabs-text {
+	color: #a6d8c7 ! important;
+}
+
+.x-tab-strip-top .x-tab-right {
+	background-image: url(../images/qing/tabs/tabs-sprite.gif) ! important;
+}
+
+.x-tab-strip-top .x-tab-left {
+	background-image: url(../images/qing/tabs/tabs-sprite.gif) ! important;
+}
+
+.x-tab-strip-top .x-tab-strip-inner {
+	background-image: url(../images/qing/tabs/tabs-sprite.gif) ! important;
+}
+
+.x-tab-strip-bottom .x-tab-right {
+	background-image:
+		url(../images/qing/tabs/tab-btm-inactive-right-bg.gif) ! important;
+}
+
+.x-tab-strip-bottom .x-tab-left {
+	background-image: url(../images/qing/tabs/tab-btm-inactive-left-bg.gif)
+		 ! important;
+}
+
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-right {
+	background-image: url(../images/qing/tabs/tab-btm-right-bg.gif) ! important;
+}
+
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-left {
+	background-image: url(../images/qing/tabs/tab-btm-left-bg.gif) ! important;
+}
+
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {
+	background-image: url(../images/qing/tabs/tab-close.gif) ! important;
+}
+
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:hover {
+	background-image: url(../images/qing/tabs/tab-close.gif) ! important;
+}
+
+.x-tab-panel-body {
+	border-color: #91ceb9 ! important;
+	background: #fff ! important;
+}
+
+.x-tab-panel-bbar .x-toolbar {
+	border-color: #91ceb9 ! important;
+}
+
+.x-tab-panel-tbar .x-toolbar {
+	border-color: #91ceb9 ! important;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-spacer {
+	border-color: #91ceb9 ! important;
+	background: #77bcb9 ! important;
+}
+
+.x-tab-scroller-left {
+	background-image: url(../images/qing/tabs/scroll-left.gif) ! important;
+	border-color: #4aaea2 ! important;
+}
+
+.x-tab-scroller-right {
+	background-image: url(../images/qing/tabs/scroll-right.gif) ! important;
+	border-color: #4aaea2 ! important;
+}
+
+/* Window */
+.x-window-proxy {
+	background: #b2dece ! important;
+	border-color: #55ae8f ! important;
+}
+
+.x-window-tl .x-window-header {
+	color: #555 ! important;
+}
+
+.x-window-tc {
+	background-image: url(../images/qing/window/top-bottom.png) ! important;
+}
+
+.x-window-tl {
+	background-image: url(../images/qing/window/left-corners.png) ! important;
+}
+
+.x-window-tr {
+	background-image: url(../images/qing/window/right-corners.png) ! important;
+}
+
+.x-window-bc {
+	background-image: url(../images/qing/window/top-bottom.png) ! important;
+}
+
+.x-window-bl {
+	background-image: url(../images/qing/window/left-corners.png) ! important;
+}
+
+.x-window-br {
+	background-image: url(../images/qing/window/right-corners.png) ! important;
+}
+
+.x-window-mc {
+	border: 1px solid #91ceb9 ! important;
+	background: #91cec6 ! important;
+}
+
+.x-window-ml {
+	background-image: url(../images/qing/window/left-right.png) ! important;
+}
+
+.x-window-mr {
+	background-image: url(../images/qing/window/left-right.png) ! important;
+}
+
+.x-panel-ghost .x-window-tl {
+	border-color: #91ceb9 ! important;
+}
+
+.x-panel-collapsed .x-window-tl {
+	border-color: #91ceb9 ! important;
+}
+
+.x-window-plain .x-window-mc {
+	background: #91cec6 ! important;
+	border-right: 1px solid #d0ebe2 ! important;
+	border-bottom: 1px solid #d0ebe2 ! important;
+	border-top: 1px solid #91ceb9 ! important;
+	border-left: 1px solid #91ceb9 ! important;
+}
+
+.x-window-plain .x-window-body {
+	border-left: 1px solid #d0ebe2 ! important;
+	border-top: 1px solid #d0ebe2 ! important;
+	border-bottom: 1px solid #91ceb9 ! important;
+	border-right: 1px solid #91ceb9 ! important;
+	background: transparent !important;
+}
+
+body.x-body-masked .x-window-mc,body.x-body-masked .x-window-plain .x-window-mc
+	{
+	background-color: #bce2d5 ! important;
+}
+
+/* misc */
+.x-html-editor-wrap {
+	border-color: #91ceb9 ! important;
+}
+
+/* Borders go last for specificity */
+.x-panel-noborder .x-panel-body-noborder {
+	border-width: 0 ! important;
+}
+
+.x-panel-noborder .x-panel-header-noborder {
+	border-width: 0 ! important;
+	border-bottom: 1px solid #91ceb9 ! important;
+}
+
+.x-panel-noborder .x-panel-tbar-noborder .x-toolbar {
+	border-width: 0 ! important;
+	border-bottom: 1px solid #91ceb9 ! important;
+}
+
+.x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
+	border-width: 0 ! important;
+	border-top: 1px solid #91ceb9 ! important;
+}
+
+.x-window-noborder .x-window-mc {
+	border-width: 0 ! important;
+}
+
+.x-window-plain .x-window-body-noborder {
+	border-width: 0 ! important;
+}
+
+.x-tab-panel-noborder .x-tab-panel-body-noborder {
+	border-width: 0 ! important;
+}
+
+.x-tab-panel-noborder .x-tab-panel-header-noborder {
+	border-top-width: 0 ! important;
+	border-left-width: 0 ! important;
+	border-right-width: 0 ! important;
+}
+
+.x-tab-panel-noborder .x-tab-panel-footer-noborder {
+	border-bottom-width: 0 ! important;
+	border-left-width: 0 ! important;
+	border-right-width: 0 ! important;
+}
+
+.x-tab-panel-bbar-noborder .x-toolbar {
+	border-width: 0 ! important;
+	border-top: 1px solid #91ceb9 ! important;
+}
+
+.x-tab-panel-tbar-noborder .x-toolbar {
+	border-width: 0 ! important;
+	border-bottom: 1px solid #91ceb9 ! important;
+}
+
+/** 自定义修正 */
+.x-tree-node .x-tree-node-over {
+	background-color: #F6FBFA ! important;
+}
+
+.x-tree-node .x-tree-selected {
+	background-color: #D7F2ED !important;
+}
+
+.x-grid3-row-over {
+	background-color: #D7F2ED ! important;
+}
+
+.x-grid3-row-selected {
+	background-color: #D7F2ED !important;
+}
