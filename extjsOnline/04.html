@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ext表格</title>
+    <link rel="icon" href="../20160714101512.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css">
+    <script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../extjs/ext-all.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    Ext.onReady(function () {
+//        最基本的表格：
+//        ----------------------grid1
+        var cm = new Ext.grid.ColumnModel([
+            {header: '编号', dataIndex: 'id'},
+            {header: '性别', dataIndex: 'sex'},
+            {header: '姓名', dataIndex: 'name'},
+            {header: '描述', dataIndex: 'descn'}
+        ]);
+        cm.defaultSortable = true;
+        var data = [
+            ['1', 'man', '甲', 'descn1'],
+            ['2', 'woman', '乙', 'descn2'],
+            ['3', 'man', '丙', 'descn3'],
+            ['4', 'woman', '丁', 'descn4'],
+            ['5', 'man', '戊', 'descn5']
+        ];
+        var ds = new Ext.data.Store({
+            proxy: new Ext.data.MemoryProxy(data),
+            reader: new Ext.data.ArrayReader({}, [
+                {name: 'id'},
+                {name: 'sex'},
+                {name: 'name'},
+                {name: 'descn'}
+            ])
+        });
+        ds.load();
+        var grid = new Ext.grid.GridPanel({
+            el: 'grid1',
+            ds: ds,
+            cm: cm,
+//            width: 160,
+//            height: 420,
+            viewConfig: {
+                forceFit: true
+            },
+            applyTo: 'grid1'
+        });
+//----------------------------------------grid2
+        var sm1 = new Ext.grid.CheckboxSelectionModel();
+        var cm1 = new Ext.grid.ColumnModel([
+            new Ext.grid.RowNumberer(),
+            sm1,
+            {header: '编号', dataIndex: 'id'},
+            {header: '性别', dataIndex: 'sex'},
+            {header: '名称', dataIndex: 'name'},
+            {header: '描述', dataIndex: 'descn'}
+        ]);
+        cm1.defaultSortable = true;
+        var data1 = [
+            ['1', '男', '甲', 'descn1'],
+            ['2', '女', '乙', 'descn2'],
+            ['3', '女', '丙', 'descn3'],
+            ['4', '男', '丁', 'descn4'],
+            ['5', '女', '戊', 'descn5']
+        ];
+        var ds1 = new Ext.data.Store({
+            proxy: new Ext.data.MemoryProxy(data1),
+            reader: new Ext.data.ArrayReader({}, [
+                {name: 'id'},
+                {name: 'sex'},
+                {name: 'name'},
+                {name: 'descn'}
+            ]),
+//            autoLoad: true
+        });
+        ds1.load();
+        var grid2 = new Ext.grid.GridPanel({
+            el: "grid2",
+            ds: ds1,
+            cm: cm1,
+            sm: sm1,
+            title: '员工信息表',//加表头
+            applyTo: 'grid2',
+            viewConfig: {
+                forceFit: true
+            }
+        });
+        //添加单击事件
+        grid2.addListener('cellclick', cellclick);
+    });
+    function cellclick(grid, rowIndex, columnIndex, e) {
+        var record = grid.getStore().getAt(rowIndex);
+        var fieldName = grid.getColumnModel().getDataIndex(columnIndex);
+        var data = record.get(fieldName);
+        Ext.Msg.alert('tips', record + "," + fieldName + "," + data);
+    }
+
+    //----------------------添加右键菜单：
+    Ext.onReady(function () {
+        var sm3 = new Ext.grid.CheckboxSelectionModel();
+        var cm3 = new Ext.grid.ColumnModel([
+            new Ext.grid.RowNumberer(),
+            sm3,
+            {header: '编号', dataIndex: 'id'},
+            {header: '性别', dataIndex: 'sex'},
+            {header: '名称', dataIndex: 'name'},
+            {header: '描述', dataIndex: 'descn'}
+        ]);
+        cm3.defaultSortable = true;
+        var data3 = [
+            ['1', '男', '甲', 'descn1'],
+            ['2', '女', '乙', 'descn2'],
+            ['3', '女', '丙', 'descn3'],
+            ['4', '男', '丁', 'descn4'],
+            ['5', '女', '戊', 'descn5']
+        ];
+        var ds3 = new Ext.data.Store({
+            proxy: new Ext.data.MemoryProxy(data3),
+            reader: new Ext.data.ArrayReader({}, [
+                {name: 'id'},
+                {name: 'sex'},
+                {name: 'name'},
+                {name: 'descn'}
+            ])
+        });
+        ds3.load();
+
+        var grid3 = new Ext.grid.GridPanel({
+            el: 'grid3',
+            ds: ds3,
+            sm: sm3,
+            cm: cm3,
+            title: '员工信息表',
+            viewConfig: {
+                forceFit: true
+            },
+            applyTo: 'grid3'
+        });
+        grid3.addListener('rowcontextmenu', rightClickFn);
+        var rightClick = new Ext.menu.Menu({
+            id: 'rightClickCount', //在HTML文件中必须有个rightClickCont的DIV元素
+            items: [{
+                id: 'rMenu1',
+                handler: rMenu1Fn,//点击后触发的事件
+                text: '右键菜单1'
+            }, {
+                id: 'rmenu2',
+                handler: rMenu2Fn,
+                text: '右键菜单2'
+            }
+            ]
+        });
+
+        function rightClickFn(grid, rowIndex, e) {
+            e.preventDefault();
+            rightClick.showAt(e.getXY());
+        }
+
+        function rMenu1Fn() {
+            Ext.Msg.alert('right', 'rightClick');
+        }
+
+        function rMenu2Fn() {
+            Ext.Msg.alert('tips', 'helllo!');
+        }
+
+    });
+</script>
+<div>
+    <label>最基本的表格：</label>
+    <div id="grid1"></div>
+</div>
+<div>
+    <label>带单选框</label>
+    <div id="grid2"></div>
+</div>
+<div>
+    <label>添加右键菜单：</label>
+    <div id="grid3"></div>
+    <div id="rightClickCont"></div>
+</div>
+
+
+</body>
+</html>

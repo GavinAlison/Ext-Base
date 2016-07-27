@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ext Js</title>
+    <link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css">
+    <script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../extjs/ext-all.js"></script>
+    <style type="text/css">
+        .x-panel-ml {
+            height: 99px;
+            background-color: #dfe8f6 ;
+            padding-left: 6px;
+        }
+        .x-panel-mc{
+          height: 100%;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    Ext.onReady(function () {
+//        var txtAccount = new Ext.form.TextField({
+//            width: 120, fieldLabel: '用户名'
+//        });
+//        var checkFlag = new Ext.form.Checkbox({boxLabel: '是', fieldLabel: '是否选择', value: 1});
+//        var DeptDs = new Ext.data.Store({
+//            proxy: new Ext.data.HttpProxy({
+//                method: 'post',
+//                url: 'd.php',
+//                params: {test: 'load'}
+//            }),
+//            autoLoad: true,
+//            reader: new Ext.data.JsonReader({
+//                root: 'data', id: 'dddd',
+//                totalProperty: 'totalCount'
+//            }, [{name: 'value'}, {name: 'text'}])
+//        });
+        var data = [
+            ['010', '上海'],
+            ['011', '北京'],
+            ['012', '深圳']
+        ];
+        var DeptDs = new Ext.data.Store({
+            proxy: new Ext.data.MemoryProxy(data),
+            reader: new Ext.data.ArrayReader({}, [
+                {name: 'value'}, {name: 'text'}
+            ]),
+            autoLoad: true
+        });
+        var comboDepts = new Ext.form.ComboBox({
+            id: 'combo',
+            store: DeptDs,
+            valueField: 'value',
+            displayField: 'text',
+            mode: 'local',
+            allowBlank: true,
+            emptyText: '选择省份......',
+            width: 220,
+            fieldLabel: '省份',
+            blankText: '选择省份',
+            editable: true,
+            tabIndex: 4,
+            triggerAction: 'all',
+            autoLoad: true
+        });
+        var form1 = new Ext.form.FormPanel({
+            title: '综合查询',
+            applyTo: 'search_form',
+            frame: true,
+            items: [{
+                xtype: 'textfield',
+                fieldLabel: '名称',
+                name: 'title'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: '内容',
+                name: 'director'
+            }
+//                {
+//                columnWidth: .5, layout: 'form',
+//                items: [txtAccount]
+//            },
+//                {
+//                columnWidth: .5, layout: 'form',
+//                items: [checkFlag]
+//            },
+                , {
+                    layout: 'form',
+                    items: [comboDepts]
+                }
+            ],
+            buttons: [{
+                ctCls: 'margin-top:-20px',
+                text: '开始查询',
+                handler: function () {
+                    doSearch();
+                }
+            }]
+        });
+        var doSearch = function () {
+            //Ext.Msg.alert('提示','操作已经成功'+Ext.getDom("title").id);
+            //Ext.Msg.alert('提示','操作已经成功'+txtAccount.getValue());
+            //Ext.Msg.alert('提示','操作已经成功'+Ext.get('title').getValue());
+            Ext.Msg.alert('提示', '操作已经成功' + comboDepts.getValue());
+        };
+//        var  temp = document.getElementsByClassName('x-panel-ml')[0];
+//        temp.removeAttribute('backgroundColor');
+//        temp.height ="99px";
+//        temp.style.backgroundColor="#dfe8f6";
+//        temp.style.paddingLeft="6px";
+//        Ext.get(temp).removeClass('x-panel-ml');
+//        temp.addClass('x-panel-mll');
+    });
+</script>
+<div id="hello"></div>
+<div id='search_form'></div>
+</body>
+</html>
