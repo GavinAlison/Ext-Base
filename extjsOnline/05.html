@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ext grid</title>
+    <link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css">
+    <script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="../extjs/ext-all.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    Ext.onReady(function () {
+        var sm = new Ext.grid.CheckboxSelectionModel();
+        var cm = new Ext.grid.ColumnModel([
+            new Ext.grid.RowNumberer(),
+            sm,
+            {header: '编号', dataIndex: 'id'},
+            {header: '性别', dataIndex: 'sex', renderer: changeSex},
+            {header: '名称', dataIndex: 'name'},
+            {header: '描述', dataIndex: 'descn'}
+        ]);
+        cm.defaultSortable = false;
+        var data = [
+            ['1', '男', '甲', 'descn1'],
+            ['2', '女', '乙', 'descn2'],
+            ['3', '女', '丙', 'descn3'],
+            ['4', '男', '丁', 'descn4'],
+            ['5', '女', '戊', 'descn5']
+        ];
+
+        var ds1 = new Ext.data.Store({
+            proxy: new Ext.data.MemoryProxy(data),
+            reader: new Ext.data.ArrayReader({}, [
+                {name: 'id'},
+                {name: 'sex'},
+                {name: 'name'},
+                {name: 'descn'}
+            ])
+        });
+        ds1.load();
+
+        var grid1 = new Ext.grid.GridPanel({
+            el: 'grid1',
+            ds: ds1,
+            cm: cm,
+            sm: sm,
+            height: 160,
+            width: 450
+
+        });
+        grid1.render();
+    });
+    function changeSex(value) {
+        if (value == '男') {
+            return "<span style='color:red;font-weight:bold;'>男</span>";
+        } else {
+            return "<span style='color:green;font-weight:bold;'>女</span>";
+        }
+    }
+
+</script>
+<h1>表格示例</h1>
+<div id="grid1"></div>
+<div id="grid2"></div>
+</body>
+</html>

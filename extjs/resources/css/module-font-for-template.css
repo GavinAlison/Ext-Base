@@ -1,0 +1,55 @@
+table {font-size:12px; }
+.button {font-size:12px; }
+input {font-size:12px; }
+.table_list {font-size: 12px;}
+.td_table_field {font-size: 12px;}
+.table_fistlist {font-size: 12px;}
+.content_a a {font-size: 12px;}
+.tr_title {font-size: 12px;}
+.tr_title2 {font-weight: bold;font-size:bold 12px;}
+.td_title {font-weight: bold;font-size: 12px;}
+.panel_bg {font-weight: bold;}
+.navigator a {font-weight: bold;}
+.navigator a:hover {font-weight: bold;}
+.table_bg {font-weight: bold;}
+.panel_grade {font-weight: bold;}
+.td_title2 {font-weight: bold;font-size: 12px;}
+.title_text {font-weight: bold;font-size: 14px;}
+.title_text_left {font-weight: bold;font-size: 14px;}
+.common_text_left {font-weight: lighter;font-size: 12px;}
+.red_text_left {font-weight: lighter;font-size: 12px;}
+.tab_noneinfo_odd {font-size: xx-small;}
+.tab_page_lay1 {font-size: 13px;}
+.tab_page_lay2 {font-size: 13px;}
+.tr_list_even {font-size: 13px;}
+.tr_list_odd {font-size: 13px;}
+.tr_first_title {font-weight: bold;font-size: 12px;}
+.alink_list:link {font-size: 13px;}
+.alink_list:visited {font-size: 13px;}
+.alink_list:hover {font-size: 13px;}
+.alink_title:link {font-size: 13px;}
+.alink_title:visited {font-size: 13px;}
+.alink_title:hover {font-size: 13px;}
+.td_ciis_content {font-size: 13px;}
+.td_ciis_person {font-size: 13px;}
+.reply_title_text {font-size: 14px;font-weight: bold;}
+.info_detail_table {font-size: 13px;}
+.td_ciis_form {font-size: 13px;}
+.info_reply_table {font-size: 13px;}
+.color_text {font-size: 12px;font-weight: bold;}
+.web_table {font-weight: bold;}
+.footer1 {font-weight: bold;}
+.dropdiv {font-size: 13px;}
+.dropdiv_hover {font-size: 13px;}
+.title_text {font-size: 20px;font-weight: bold;}
+.t_c1_p {font-size: 13px;}
+.inner_div1 {font-size: 14px;font-weight: bold;}
+.inner_div2 {font-size: 14px;font-weight: bold;}
+.title {font-weight: bold;font-size: 22px;}
+.childreport_input {font-family: '宋体';font-size: 13px;}
+.tab_tit_bg {font-weight: normal;}
+.n_tab_tit_bg {font-weight: bold;}
+.n_tab_tit_bg_c {font-weight: bold;}
+.tr_gray {text-indent: 10px;}
+.tab_text {font-size: 12px;}
+.error_image {font-size:14px;font-weight:bold;}

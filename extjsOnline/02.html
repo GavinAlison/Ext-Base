@@ -6,19 +6,31 @@
     <link rel="stylesheet" type="text/css" href="../extjs/resources/css/ext-all.css">
     <script type="text/javascript" src="../extjs/adapter/ext/ext-base.js"></script>
     <script type="text/javascript" src="../extjs/ext-all.js"></script>
-    <script type="text/javascript" src="../extjs/build/locale/ext-lang-zh_CN.js"></script>
+    <!--<script type="text/javascript" src="../extjs/build/locale/ext-lang-zh_CN.js"></script>-->
 </head>
 <body>
+<style tyoe="text/css">
+    .x-panel {
+        height: 200px;
+    }
+</style>
 <script type="text/javascript">
-//    Ext.onReady(function () {
-//        var form1 = new Ext.form.FormPanel({
-//            title: '综合查询',
-//            applyTo: 'search_form',
-//            frame: true,//frame:false,
-//            items: [{}]
-//        });
-//    });
-
+    Ext.onReady(function () {
+        //frame: true/false的区别
+        var form1 = new Ext.form.FormPanel({
+            title: '综合查询',
+            applyTo: 'hello',
+            frame: false,//frame:false,
+            items: [{}]
+        });
+        var form2 = new Ext.form.FormPanel({
+            title: '综合查询',
+            applyTo: 'search_form',
+            frame: true,//frame:false,
+            items: [{}]
+        });
+    });
+    //表单中添加input和按钮
     Ext.onReady(function () {
         var form2 = new Ext.form.FormPanel({
             title: '综合查询',
@@ -28,7 +40,7 @@
                 xtype: 'textfield',
                 fieldLabel: '名称',
                 name: 'title'
-            },{
+            }, {
                 xtype: 'textfield',
                 fieldLabel: '内容',
                 name: 'director'
@@ -40,17 +52,110 @@
                 }
             }]
         });
-        var doSearch = function(){
+        //表单跳转：
+        var doSearch = function () {
             Ext.Msg.alert('tips', '操作成功!');
+            location.href = 'times.dd'
+        };
+        //表单元素设置ID以及获取
+        var form_test01 = new Ext.form.FormPanel({
+            title: '表单元素设置ID以及获取',
+            applyTo: 'test01',
+            frame: true,
+            items: [{
+                xtype: 'textfield',
+                fieldLabel: '名称',
+                name: 'title',
+                id: 'tid'
+            }, {
+                xtype: 'textfield',
+                fieldLabel: '内容',
+                name: 'director'
+            }],
+            buttons: [{
+                text: "search",
+                handler: function () {
+                    dodoSearch();
+                }
+            }]
+        });
+        var dodoSearch = function () {
+            Ext.Msg.alert('tips', '操作成功' + (Ext.getDom('tid')) + "," + Ext.get('tid').getValue() + "," + Ext.getDom('tid').value);
+        };
+        //声明示定义文本框以及获取值
+        var txtAccount = new Ext.form.TextField({
+            width: 120,
+            fieldLabel: '用户名'
+        });
+        var form_test02 = new Ext.form.FormPanel({
+            title: '声明示定义文本框以及获取值',
+            applyTo: 'test02',
+            frame: true,
+            items: [{
+                xtype: 'textfield',
+                fieldLabel: '名称',
+                name: 'title'
+            }, {
+                xtype: 'textfield',
+                name: 'director',
+                fieldLabel: '内容'
+            }, {
+                columnWidth: 10,
+                layout: 'form',
+                items: [txtAccount]
+            }], buttons: [{
+                text: 'search',
+                handler: function () {
+                    search();
+                }
+            }]
+        });
+        var search = function () {
+            Ext.Msg.alert('tips', '操作成功' + txtAccount.getValue());
         }
+//        定义单选框以及获取选中
+        var checkFlag = new Ext.form.Checkbox({boxLabel: 'Y', fieldLabel: '是否选择', value: 1});
+        var form03 = new Ext.form.FormPanel({
+            title: '综合查询',
+            applyTo: 'test03',
+            frame: true,
+            items: [{
+                xtype: 'textfield',
+                fieldLabel: '名称',
+                name: 'title'
+            }, {
+                columnWidth: .5,
+                layout: 'form',
+                items: [checkFlag]
+            }, {
+                xtype: 'textfield',
+                fieldLabel: '内容',
+                name: 'director'
+            }],
+            buttons: [{
+                text: '开始查询',
+                handler: function () {
+                    doSearch03();
+                }
+            }]
+        });
+        var doSearch03 = function (){
+            var rejectFlag = 0;
+            if(checkFlag.checked){
+                rejectFlag = 1;
+            }
+            Ext.Msg.alert('tips','操作成功'+rejectFlag);
+        };
     });
-
-
 </script>
 
 
-<!--<div id="hello"></div>-->
-<!--<div id="search_form"></div>-->
+<div id="hello"></div>
+<div id="search_form"></div>
 <div id="search_f"></div>
+<div id="test01"></div>
+<div id="test02"></div>
+<div id="test03"></div>
+<div id="test04"></div>
 </body>
 </html>

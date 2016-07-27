@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Toolbar with MonthMenu</title>
+<link rel="stylesheet" type="text/css" href="../resources/css/ext-all.css" />
+
+    <!-- GC -->
+ 	<!-- LIBS -->
+ 	<script type="text/javascript" src="../adapter/ext/ext-base.js"></script>
+ 	<!-- ENDLIBS -->
+
+    <script type="text/javascript" src="../ext-all-debug.js"></script>
+<script type="text/javascript"
+	src="../build/locale/ext-lang-zh_CN.js"></script>
+
+<script type="text/javascript" src="Ext.ux.MonthPicker.js"></script>
+<script type="text/javascript" src="monthmenu.js"></script>
+
+<link rel="stylesheet" type="text/css" href="monthmenu.css" />
+
+
+</head>
+<body>
+
+<h1>Toolbar with MonthMenu</h1>
+<p>The js is not minified so it is readable. See <a href="monthmenu.js">monthmenu.js</a>.</p>
+
+<p>The first MonthMenu is nothing special. You can set the value of the element/picker
+via <span class="code">this.menu.picker.setValue(Date)</span> in the <span class="code">menushow</span> listener. So one option is parsing the displayed
+button text and get a valid date if you previously set a proper text (using <span class="code">Button.setText(String)</span>).</p>
+<p>The second MonthMenu example shows how to define a date range for valid values in the picker. 
+So the user can only select from the allowed ones.</p>
+<p>Finally set up a handler for the MonthMenu to process any changes made via the picker.
+You have access to the <span class="code">oldValue</span> and <span class="code">newValue</span>. So take the appropriate/desired 
+actions (e.g. reload a grid, send a request to the server, ...) depending on these two values.</p>
+<div id="container">
+    <div id="toolbar"></div>
+</div>
+<br /><br /><br /><br /><br />
+</body>
+</html>

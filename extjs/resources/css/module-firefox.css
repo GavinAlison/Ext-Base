@@ -1,0 +1,188 @@
+.modulegreen .content_a a:visited {
+	color: #02b483;
+}
+.modulegreen .content_a a:link {
+	color: #006b4e;
+}
+.modulegreen .content_a a:hover {
+	color: #b5dc02;
+}
+.modulered .content_a a:link {
+	color: #900e00;
+}
+.modulered .content_a a:visited {
+	color: #d15342;
+}
+.modulered .content_a a:hover {
+	color: #caca02;
+}
+.moduleblue .content_a a:link {
+	color: #003d99;
+}
+.moduleblue .content_a a:visited {
+	color: #830000;
+}
+.moduleblue .content_a a:hover {
+	color: #fe963f;
+}
+.moduleorange .content_a a:link{
+	color:#914f07;
+}
+.moduleorange .content_a a:visited{
+	color:#df7a17;
+}
+.moduleorange .content_a a:hover{
+	color:#008a69;
+}
+.modulegrayblue .content_a a:link {
+	color: #364257;
+}
+.modulegrayblue .content_a a:visited {
+	color: #6c788d;
+}
+.modulegrayblue .content_a a:hover {
+	color: #ce5502;
+}
+
+.modulegrayblue .login_button_1{
+	cursor:pointer;
+	position:relative;
+	left:180px;
+	bottom:73px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.modulegrayblue .login_button_2{
+	cursor:pointer;
+	position:relative;
+	left:270px;
+	bottom:105px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.modulered .login_button_1{
+	cursor:pointer;
+	position:relative;
+	left:180px;
+	bottom:73px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.modulered .login_button_2{
+	cursor:pointer;
+	position:relative;
+	left:270px;
+	bottom:105px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.moduleblue .login_button_1{
+	cursor:pointer;
+	position:relative;
+	left:180px;
+	bottom:73px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.moduleblue .login_button_2{
+	cursor:pointer;
+	position:relative;
+	left:270px;
+	bottom:105px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.moduleorange .login_button_1{
+	cursor:pointer;
+	position:relative;
+	left:180px;
+	bottom:73px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.moduleorange .login_button_2{
+	cursor:pointer;
+	position:relative;
+	left:270px;
+	bottom:105px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.modulegreen .login_button_1{
+	cursor:pointer;
+	position:relative;
+	left:180px;
+	bottom:73px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.modulegreen .login_button_2{
+	cursor:pointer;
+	position:relative;
+	left:270px;
+	bottom:105px;
+	min-width:69px;
+	width:69px;
+	min-height:30px;
+	height:30px;
+}
+.moduleblue .content_l_a a {
+	padding-top: 1px;
+}
+.modulered .content_l_a a {
+	padding-top: 1px;
+}
+.moduleorange .content_l_a a {
+	padding-top: 1px;
+}
+.modulegray .content_l_a a {
+	padding-top: 1px;
+}
+.moduleqing .content_l_a a {
+	padding-top: 1px;
+}
+.modulegrayblue .content_l_a a {
+	padding-top: 1px;
+}
+.modulegreen .content_l_a a {
+	padding-top: 1px;
+}
+.modulegreen .banner-font {
+	margin-top:-3px;
+}
+.moduleqing .banner-font {
+	margin-top:-3px;
+}
+.modulered .banner-font {
+	margin-top:-3px;
+}
+.modulegrayblue .banner-font {
+	margin-top:-3px;
+}
+.modulegray .banner-font {
+	margin-top:-3px;
+}
+.moduleorange .banner-font {
+	margin-top:-3px;
+}
+.moduleblue .banner-font {
+	margin-top:-3px;
+}

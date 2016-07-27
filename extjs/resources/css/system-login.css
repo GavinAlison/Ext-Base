@@ -1,0 +1,204 @@
+/** 登陆页面样式定义 */
+html,body,table {
+	font-family: 微软雅黑, 黑体, 宋体;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background:#0163a5;
+}
+.table_bg {
+	width:1000px;
+	height:100%;
+	background-repeat:repeat-x;
+	background-color:#0163a5;
+	background-image: url(../images/login_image/login_bg.jpg);
+}
+.login {
+	padding:0;margin:0;
+	text-align: center;
+	width: 100%;
+	height:555px;
+	position:relative;
+}
+.input_text {
+	color:#002a80;
+	float:left;
+	height:21px;
+	line-height:21px;
+}
+
+.input_username {
+	position:absolute;
+	left:245px;
+	top:462px;
+	height:21px;
+}
+.input_password {
+	position:absolute;
+	left:540px;
+	top:462px;
+	height:21px;
+}
+.input_username .input {
+	font-size:16px;
+	font-weight:300;
+	height:21px;
+	width:180px;
+	padding-left:4px;
+	line-height:21px;
+}
+.input_password .input {
+	font-size:16px;
+	font-weight:300;
+	height:21px;
+	width:180px;
+	padding-left:4px;
+	line-height:18px;
+}
+.login_submit {
+	position:absolute;
+	left:410px;
+	top:505px;
+	height:30px;
+	line-height:31px;
+	width:68px;
+}
+.login_submit a {
+	color:#002a80;
+	display:block;
+	width:68px;
+	height:31px;
+	text-decoration:none;
+	background-image:url(../images/login_image/login_button.gif);
+}
+.login_submit a:hover {
+	background-image:url(../images/login_image/login_button_hover.gif);
+}
+.login_submit a:active {
+	background-image:url(../images/login_image/login_button_active.gif);
+}
+/*.login_submit a:visited {
+	color:#002a80;
+	background-image:url(../images/login_image/login_button.gif);
+}*/
+.login_reset {
+	position:absolute;
+	left:540px;
+	top:505px;
+	height:30px;
+	line-height:31px;
+	width:68px; 
+}
+.login_reset a {
+	color:#002a80;
+	display:block;
+	width:68px;
+	height:31px;
+	text-decoration:none;
+	background-image:url(../images/login_image/login_button.gif);
+}
+.login_reset a:hover {
+	background-image:url(../images/login_image/login_button_hover.gif);
+}
+.login_reset a:active {
+	background-image:url(../images/login_image/login_button_active.gif);
+}
+/*.login_reset a:visited {
+	background-image:url(../images/login_image/login_button.gif);
+}
+*/.input_username .inputover {
+	border:1px solid #ffbf34;
+}
+.input_password .inputover {
+	border:1px solid #ffbf34;
+}
+
+/** 页脚版权说明 */
+.footer {
+	color: #4298d1;
+	font-weight: bold;
+	width: 100%;
+	height: 23px;
+	line-height: 21px;
+	text-align: center;
+}
+
+.footer a {
+	color: #004190;
+	text-decoration: none;
+}
+
+/** extjs 样式调整 */
+.ext-gecko .x-form-text {
+	height: 22px;
+}
+
+.ext-safari .x-form-text {
+	height: 22px;
+}
+
+.ext-ie .x-form-text {
+	margin-top: 0px;
+}
+
+.ext-strict .x-form-field-wrap .x-form-trigger {
+	top: 5px; /** IE8 */
+	*top: 0px; /** IE6、7 */
+}
+@media screen and (min-width:0) {
+.ext-strict .x-form-field-wrap .x-form-trigger {
+	top: 4px; /** IE9 */
+}
+}
+
+/** 分别设定各个系统的个性化样式, 替换图片和各种颜色 */
+
+/** 适航管理信息系统 */
+.CAAW .table_bg{
+	background-image: url(../images/login_image/CAAW/login_bg.jpg);
+}
+.CAAW .input_username {
+	left:194px;
+}
+.CAAW .input_username input {
+	width:130px;
+}
+.CAAW .input_password {
+	left:400px;
+}
+.CAAW .input_password input {
+	width:130px;
+}
+.CAAW .input_planeid {
+	position:absolute;
+	left:600px;
+	top:459px;
+	height:21px;
+}
+/** 质量管理信息系统 */
+.QMIS .table_bg{
+	background-image: url(../images/login_image/QMIS/login_bg.jpg);
+}
+ 
+/** 军检系统 */
+.QSMIS .table_bg{
+	background-image: url(../images/login_image/QSMIS/login_bg.jpg);
+}
+
+/** 交互系统 */
+.CIIS .table_bg{
+	background-image: url(../images/login_image/CIIS/login_bg.jpg);
+}
+/** 交互系统 */
+.PMS .table_bg{
+	background-image: url(../images/login_image/PMS/login_bg.jpg);
+}
+/** 西安军代局质量系统 */
+.MISXAAGB .table_bg{
+	background-image: url(../images/login_image/MISXAAGB/login_bg.jpg);
+}
+
+ 
