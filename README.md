@@ -1,2 +1,3 @@
 # Ext-Base
-这是Ext的基础练习
+This is the basis of the practice of Ext
+
